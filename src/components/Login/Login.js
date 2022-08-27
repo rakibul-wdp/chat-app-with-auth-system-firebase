@@ -30,11 +30,6 @@ const Login = () => {
       navigate(from, { replace: true });
     }
   }, [googleUser, emailUser, from, navigate]);
-  // useEffect(() => {
-  //   if (token) {
-  //     navigate(from, { replace: true });
-  //   }
-  // }, [from, navigate, token]);
   if (googleError || emailError || resetError) {
     signInError = (
       <p className='mb-3 text-red-500'>{googleError?.message || emailError?.message || resetError?.message}</p>
