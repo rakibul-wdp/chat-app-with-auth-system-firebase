@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import auth from '../../firebase.init';
 import firebase from 'firebase/app';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
+import ChatMessage from './ChatMessage';
 
 const firestore = firebase.firestore();
 
